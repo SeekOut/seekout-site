@@ -5,6 +5,7 @@ $body-font-family:             "Open Sans","Helvetica Neue", Helvetica, sans-ser
 
 $c-body-font:                  #333;
 $c-turq:                       #009688;
+$c-gray--light:                #ebebeb;
 
 $row-width:                    940px;
 $mobile-width:                 768px;

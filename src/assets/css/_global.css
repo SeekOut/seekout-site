@@ -5,7 +5,7 @@
 
 body {
   font-family: $body-font-family;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 h1,
@@ -15,6 +15,11 @@ h4,
 h5,
 h6 {
   font-weight: 300;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .hidden, .hide {

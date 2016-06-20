@@ -1,6 +1,4 @@
 .splash {
-  height: 100vh;
-  min-height: 768px;
   padding: calc($column-gutter*2);
   background:
     radial-gradient(circle at top left,#02fd5c,transparent),
@@ -13,22 +11,26 @@
   &__container {
     lost-center: $row-width;
   }
-  &__headline,
-  &__tagline {
-    line-height: 1;
-  }
   &__headline {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: $column-gutter 0;
   }
   &__tagline {
-    font-size: 1rem;
+    font-size: .85rem;
     margin: 0 0 calc($column-gutter*2);
   }
 }
 
+@media (--mobile-max) {
+  .splash {
+    padding-bottom: calc($column-gutter*8);
+
+  }
+}
 @media (--mobile) {
   .splash {
+    padding-top: calc($column-gutter*4);
+    padding-bottom: calc($column-gutter*16);
     &__headline {
       font-size: 3rem;
       margin-top: calc($column-gutter*3);

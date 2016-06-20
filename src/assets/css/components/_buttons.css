@@ -7,7 +7,18 @@
     font-weight: 700;
     letter-spacing: .05rem;
     padding: $column-gutter calc($column-gutter*3);
-    &-white { background-color: #fff; color: $c-body-font; }
+    transition: all 150ms ease-out;
+    &,
+    &:focus {
+      box-shadow: 0 2px 0 0 color(#000 a(.25));
+    }
+    &:active {
+      transform: translateY(1.5px);
+      box-shadow: none;
+    }
+    &-white {
+      background-color: #fff; color: $c-body-font;
+    }
     &-turq  { background-color: $c-turq; }
   }
 }
