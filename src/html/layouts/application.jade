@@ -23,11 +23,12 @@ html.no-js(lang="en")
       doc.setAttribute('data-useragent', navigator.userAgent);
     link(rel="stylesheet" href="assets/css/app.css")
     include ../shared/metadata-social
-  body(id="top" data-template=pageTemplate)
+  body(data-template=pageTemplate)
     include ../shared/header
 
     block content
     include ../shared/footer
-    script(src="assets/js/vendor/jquery.js")
+    script(src="assets/js/vendor/jquery.slim.min.js")
+    script(src="assets/js/vendor/slick.min.js")
     block footerScripts
     script(src="assets/js/app.js")
