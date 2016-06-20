@@ -1,7 +1,7 @@
 {
-  "name": "luma",
-  "version": "2.0.0",
-  "description": "Front-end prototype + wireframes built out and sent to client on completion.",
+  "name": "seekout-site",
+  "version": "1.0.0",
+  "description": "Front-end prototype for SeekOut.co landing page.",
   "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -70,6 +70,7 @@
     "postcss": "^5.0.10",
     "postcss-assets": "^4.0.1",
     "postcss-center": "^1.0.0",
+    "postcss-color-function": "^2.0.1",
     "postcss-cssnext": "^2.4.0",
     "postcss-devtools": "^1.0.0",
     "postcss-easy-import": "^1.0.1",
