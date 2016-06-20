@@ -1,0 +1,24 @@
+.callout {
+  &__title {
+    margin-top: 0;
+  }
+  &__description {
+    margin-bottom: 0;
+  }
+}
+
+@media (--mobile-max) {
+  .callout {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (--mobile) {
+  .callout {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}

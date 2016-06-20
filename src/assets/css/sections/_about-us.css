@@ -1,0 +1,61 @@
+.about-us {
+  padding: calc($column-gutter*2);
+  background-image: url("../images/svg/bg-angles.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  &__container {
+    lost-center: $row-width;
+  }
+  &__row {
+    lost-utility: clearfix;
+  }
+}
+
+@media (--mobile-max) {
+ .about-us {
+    background-size: 100% 30rem;
+    &__row {
+      &:nth-of-type(2) {
+        margin-top: calc($column-gutter*2);
+      }
+    }
+    &__screenshots {
+      text-align: center;
+      margin-bottom: $column-gutter;
+    }
+  }
+}
+
+@media (--mobile) {
+ .about-us {
+    background-size: 100% auto;
+    &__row {
+      &:nth-of-type(2) {
+        display: flex;
+        align-items: center;
+        margin-top: calc($column-gutter*4);
+        div {
+          lost-column: 1/2 2 0;
+        }
+      }
+    }
+  }
+}
+
+@media (--row) {
+ .about-us {
+    &__row {
+      &:nth-of-type(1) {
+        div {
+          max-width: 580px;
+        }
+      }
+      &:nth-of-type(2) {
+        margin-top: calc($column-gutter*6);
+        div {
+          lost-column: 1/2 2 0;
+        }
+      }
+    }
+  }
+}
