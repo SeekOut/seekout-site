@@ -1,8 +1,15 @@
-$column-gutter: 1rem;
+$column-gutter:                1rem;
 @lost gutter $column-gutter;
 
 $body-font-family:             "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 
-/* Custom Media Queries */
-$mq-row-max-width:             1170px;
-@custom-media --row screen and (min-width: $mq-row-max-width);
+$c-body-font:                  #333;
+$c-turq:                       #009688;
+
+$row-width:                    940px;
+$mobile-width:                 768px;
+$mobile-width-max:             767px;
+
+@custom-media --row        screen and (min-width: $row-width);
+@custom-media --mobile     screen and (min-width: $mobile-width);
+@custom-media --mobile-max screen and (max-width: $mobile-width-max);
