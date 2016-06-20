@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  &--filled {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    padding: $column-gutter calc($column-gutter*3);
+    &-white { background-color: #fff; color: $c-body-font; }
+    &-turq  { background-color: $c-turq; }
+  }
+}
