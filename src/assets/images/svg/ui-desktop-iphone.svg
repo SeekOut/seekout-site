@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1019 735">
+  <defs>
+    <filter id="blurFilter02" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+    </filter>
+    <clipPath id="dropShadow02">
+      <path fill="#F00" d="M939.8 0l79.2 79v589H83L0 585V0"/>
+    </clipPath>
+  </defs>
+  <path d="M0 0h940v588.8H0z" clip-path="url(#dropShadow02)" style="filter: url(#blurFilter02);" fill="#000" fill-opacity=".25" />
+  <path fill="#CCC" d="M0 20h940v20H0z"/>
+  <path fill="#CCC" d="M940 36c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h932c2.2 0 4 1.8 4 4v32zM940 584.8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-32c0-2.2 1.8-4 4-4h932c2.2 0 4 1.8 4 4v32z"/>
+  <path fill="#FFF" d="M820 28.5c0 2.2-1.8 4-4 4H84c-2.2 0-4-1.8-4-4v-17c0-2.2 1.8-4 4-4h732c2.2 0 4 1.8 4 4v17z"/>
+  <circle fill="#FFF" cx="25" cy="20" r="5"/>
+  <circle fill="#FFF" cx="40" cy="20" r="5"/>
+  <circle fill="#FFF" cx="55" cy="20" r="5"/>
+  <g fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10">
+    <path d="M904 20h16M904 25h16M904 15h16"/>
+  </g>
+  <path fill="#FFF" d="M0 40h940v528.8H0z"/>
+  <g transform="translate(540,120)" class="ui-phone ui-phone--front">
+    <use xlink:href="#ui-iphone-w-shadow" />
+    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+  </g>
+  <text x="90" y="25" font-size="12">www.SeekOut.co</text>
+</svg>

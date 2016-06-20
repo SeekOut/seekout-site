@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 718">
   <defs>
-    <filter id="blurFilter" x="0" y="0">
+    <filter id="blurFilter01" x="0" y="0">
       <feGaussianBlur in="SourceGraphic" stdDeviation="30"/>
     </filter>
-    <clipPath id="drop-shadow">
+    <clipPath id="dropShadow01">
       <path d="M279.8.4L359 79.2v559.2H83l-83-83V.4"/>
     </clipPath>
     <g id="ui-iphone-w-shadow">
-      <path fill="#000" fill-opacity=".25" d="M0 0h280v558H0z" clip-path="url(#drop-shadow)" style="filter: url(#blurFilter);" />
+      <path fill="#000" fill-opacity=".25" d="M0 0h280v558H0z" clip-path="url(#dropShadow01)" style="filter: url(#blurFilter01);" />
       <path fill="#CCC" d="M280 554c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-32c0-2.2 1.8-4 4-4h272c2.2 0 4 1.8 4 4v32z"/>
       <path fill="#FFF" d="M0 40h280v498H0z"/>
       <path fill="#CCC" d="M0 20h280v20H0z"/>
