@@ -4,6 +4,7 @@ $column-gutter:                1rem;
 $body-font-family:             "Open Sans","Helvetica Neue", Helvetica, sans-serif;
 
 $c-body-font:                  #333;
+$c-body-font--light:           #444;
 $c-turq:                       #009688;
 $c-gray--light:                #ebebeb;
 

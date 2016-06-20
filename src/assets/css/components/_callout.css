@@ -4,6 +4,7 @@
   }
   &__description {
     margin-bottom: 0;
+    color: $c-body-font--light;
   }
 }
 
@@ -19,6 +20,9 @@
   .callout {
     &__title {
       font-size: 2rem;
+    }
+    &__description {
+      font-size: 1.15rem;
     }
   }
 }
