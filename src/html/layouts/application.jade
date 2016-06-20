@@ -1,0 +1,33 @@
+block variables
+  - var pageTemplate = 'default'
+  - var pageTitle = ''
+  - var metadataURL = 'http://localhost:1111/'
+  - var metadataImage = 'http://localhost:1111/'
+  - var metadataDescription = 'null'
+
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{ (pageTitle === '') ? pageTitle + 'SeekOut' : 'SeekOut'}
+    script.
+      if (typeof Array.from === 'undefined') {
+        var es6Script = document.createElement('script');
+        es6Script.async = false;
+        es6Script.src = 'assets/js/vendor/babel-es6-polyfill.js';
+        document.head.appendChild(es6Script);
+      }
+    script.
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    link(rel="stylesheet" href="assets/css/app.css")
+    include ../shared/metadata-social
+  body(id="top" data-template=pageTemplate)
+    include ../shared/header
+
+    block content
+    include ../shared/footer
+    script(src="assets/js/vendor/jquery.js")
+    block footerScripts
+    script(src="assets/js/app.js")

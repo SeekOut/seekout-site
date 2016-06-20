@@ -1,0 +1,8 @@
+$column-gutter: 1rem;
+@lost gutter $column-gutter;
+
+$body-font-family:             "Open Sans","Helvetica Neue", Helvetica, sans-serif;
+
+/* Custom Media Queries */
+$mq-row-max-width:             1170px;
+@custom-media --row screen and (min-width: $mq-row-max-width);

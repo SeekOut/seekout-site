@@ -1,0 +1,20 @@
+{
+  "name": "seekout",
+  "version": "1.0.0",
+  "homepage": "https://github.com/**",
+  "authors": ["Taylor Ho (taylorkmho@gmail.com)"],
+  "description": "Bower packages file for SeekOut.co website",
+  "main": "dist/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "slick-carousel": "~1.5.9"
+  }
+}
