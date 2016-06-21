@@ -25,7 +25,6 @@
 
 @media (--row-max) {
   .icon-list {
-    margin-top: calc($column-gutter*4);
     &__item {
       margin-bottom: calc($column-gutter*2);
       &:last-of-type {

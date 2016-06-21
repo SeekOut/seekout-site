@@ -1,0 +1,21 @@
+.why {
+  padding: 0 calc($column-gutter*2) calc($column-gutter*2);
+  background-color: $c-gray--light;
+  &__container {
+    lost-center: $row-width;
+  }
+}
+@media (--mobile) {
+  .why {
+    padding-left: calc($column-gutter*6);
+    padding-right: calc($column-gutter*6);
+    padding-bottom: calc($column-gutter*4);
+  }
+}
+@media (--row) {
+  .why {
+    padding-left: calc($column-gutter*2);
+    padding-right: calc($column-gutter*2);
+    padding-bottom: calc($column-gutter*6);
+  }
+}

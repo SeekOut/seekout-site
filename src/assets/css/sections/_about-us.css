@@ -74,9 +74,18 @@
   }
 }
 
+@media (--row-max) {
+  .about-us {
+    &__callout {
+      margin-bottom: calc($column-gutter*4);
+    }
+  }
+}
+
 @media (--row) {
   $local--spacingTop: calc($column-gutter*12);
   .about-us {
+    padding-bottom: calc($column-gutter*6);
     background-size: 100% 25rem;
     background-position: center $local--spacingTop;
     &:before {

@@ -20,6 +20,14 @@
   }
 }
 
+@media (--row-max) {
+  .post-your-event {
+    &__callout {
+      margin-bottom: calc($column-gutter*4);
+    }
+  }
+}
+
 @media (--row) {
   .post-your-event {
     padding-top: calc($column-gutter*6);
