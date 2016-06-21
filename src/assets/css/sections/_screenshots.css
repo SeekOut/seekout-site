@@ -11,14 +11,24 @@
   &__container {
     lost-center: $row-width;
   }
-  svg {
+  img {
     position: relative;
     z-index: 100;
+  }
+  &--01 {
+    img {
+      width: 108.25%;
+      height: auto;
+    }
   }
   &--02 {
     background-image: url("../images/svg/bg-angles-02.svg");
     background-repeat: no-repeat;
     background-position: top;
+    img {
+      width: 107.5%;
+      height: auto;
+    }
   }
 }
 
@@ -43,11 +53,6 @@
         height: calc(100% - 12rem);
       }
     }
-  }
-}
-
-@media (--mobile) {
-  .screenshots {
     &--02 {
       background-size: 100% 26rem;
       background-position: center 8rem;
@@ -55,7 +60,7 @@
       &:after {
         bottom: 0;
         z-index: -1;
-        height: 14rem;
+        height: 20rem;
       }
     }
   }

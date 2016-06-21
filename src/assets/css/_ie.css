@@ -1,0 +1,5 @@
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  img[src*="svg"] {
+    width: 100%;
+  }
+}

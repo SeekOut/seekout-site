@@ -45,8 +45,6 @@
     &__screenshots {
       text-align: center;
       margin-bottom: calc(-$column-gutter*2);
-      width: calc(100% + $column-gutter*4.5);
-      transform: translateX(-$column-gutter);
       pointer-events: none;
     }
   }
@@ -76,6 +74,9 @@
 
 @media (--row-max) {
   .about-us {
+    &__screenshots {
+      width: 111.4%;
+    }
     &__callout {
       margin-bottom: calc($column-gutter*4);
     }

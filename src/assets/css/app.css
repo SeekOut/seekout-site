@@ -3,6 +3,7 @@
 
 @import "./_settings";
 @import "./_global";
+@import "./_ie";
 
 @import "./components/**/*";
 @import "./modules/**/*";

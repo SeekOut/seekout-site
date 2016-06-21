@@ -7,6 +7,9 @@ body {
   font-family: $body-font-family;
   font-weight: 300;
   color: $c-body-font;
+  > section {
+    overflow-x: hidden;
+  }
 }
 
 h1,
@@ -20,7 +23,7 @@ h6 {
 
 img {
   display: inline-block;
-  max-width: 100%;
+  &:not([src*="svg"]) { max-width: 100%; }
 }
 
 .hidden, .hide {
