@@ -62,8 +62,10 @@ const babelify                 = require('babelify'),
       browsersync              = require('browser-sync'),
       buffer                   = require('vinyl-buffer'),
       source                   = require('vinyl-source-stream'),
+      ghPages                  = require('gulp-gh-pages'),
       argv                     = require('yargs').argv,
       fatalLevel               = require('yargs').argv.fatal
+
 
 const deleteFolderRecursive = path => {
   if (fs.existsSync(path)) {
@@ -317,6 +319,12 @@ gulp.task('browsersync', () => {
     }
   })
 })
+
+gulp.task('deploy', () => {
+  return gulp.src('./dist/**/*').pipe(ghPages({
+    remoteUrl: "https://github.com/SeekOut/seekout-site.git"
+  }))
+});
 
 gulp.task('watch', ['browsersync'], () => {
   global.isWatching = true

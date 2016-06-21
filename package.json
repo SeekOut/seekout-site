@@ -42,6 +42,7 @@
     "gulp-debug": "^2.1.2",
     "gulp-filter": "^4.0.0",
     "gulp-foreach": "^0.1.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-gzip": "^1.2.0",
     "gulp-if-else": "^1.0.3",
     "gulp-imagemin": "^3.0.1",
