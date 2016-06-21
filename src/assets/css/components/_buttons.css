@@ -8,17 +8,25 @@
     letter-spacing: .05rem;
     padding: $column-gutter calc($column-gutter*3);
     transition: all 150ms ease-out;
-    &,
-    &:focus {
-      box-shadow: 0 2px 0 0 color(#000 a(.25));
-    }
     &:active {
       transform: translateY(1.5px);
       box-shadow: none;
     }
     &-white {
-      background-color: #fff; color: $c-body-font;
+      background-color: #fff;
+      color: $c-body-font;
+      &,
+      &:focus {
+        box-shadow: 0 2px 0 0 color(#000 a(.25));
+      }
     }
-    &-turq  { background-color: $c-turq; }
+    &-turq  {
+      background-color: $c-turq;
+      color: #fff;
+      &,
+      &:focus {
+        box-shadow: 0 2px 0 0 color(#000 a(.125));
+      }
+    }
   }
 }

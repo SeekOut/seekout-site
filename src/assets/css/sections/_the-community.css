@@ -1,0 +1,31 @@
+.the-community {
+  padding: calc($column-gutter*2) calc($column-gutter*2) calc($column-gutter*16);
+  text-align: center;
+  background-image:
+    url("../images/bg-city.jpg"),
+    radial-gradient(circle at bottom right, #02fd5c, transparent),
+    radial-gradient(circle at bottom left, #025cfd, transparent),
+    radial-gradient(circle at top left, #fd01a3, transparent),
+    radial-gradient(circle at top right, #fda301, transparent);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  &__container {
+    lost-center: $row-width;
+  }
+}
+
+@media (--mobile) {
+  .the-community {
+    padding-top: calc($column-gutter*4);
+    padding-bottom: calc($column-gutter*26);
+  }
+}
+
+@media (--row) {
+  .the-community {
+    padding-top: calc($column-gutter*6);
+    padding-bottom: calc($column-gutter*36);
+  }
+}

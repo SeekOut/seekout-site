@@ -29,3 +29,9 @@ img {
 .hidden, .hide {
   display: none;
 }
+
+input {
+  outline: 0;
+  border: 0;
+  -webkit-appearance: none;
+}

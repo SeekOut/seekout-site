@@ -1,10 +1,10 @@
 .post-your-event {
   padding: calc($column-gutter*2);
   background-image:
-    radial-gradient(circle at top left, #02fd5c, transparent),
-    radial-gradient(circle at top right, #025cfd, transparent),
-    radial-gradient(circle at bottom left, #fda301, transparent),
-    radial-gradient(circle at bottom right, #fd01a3, transparent);
+    radial-gradient(circle at bottom left, #02fd5c, transparent),
+    radial-gradient(circle at bottom right, #025cfd, transparent),
+    radial-gradient(circle at top left, #fda301, transparent),
+    radial-gradient(circle at top right, #fd01a3, transparent);
   background-blend-mode: overlay;
   color: #fff;
   &__container {
