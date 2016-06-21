@@ -1,9 +1,21 @@
 .about-us {
-  padding: calc($column-gutter*2);
+  position: relative;
+  padding: 0 calc($column-gutter*2) calc($column-gutter*2);
   background-image: url("../images/svg/bg-angles.svg");
   background-repeat: no-repeat;
   background-position: top;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $c-gray--light;
+  }
   &__container {
+    position: relative;
+    z-index: 120;
     lost-center: $row-width;
   }
   &__row {
@@ -12,10 +24,20 @@
 }
 
 @media (--mobile-max) {
+  $local--spacingTop: calc($column-gutter*14);
  .about-us {
-    background-size: 100% 50rem;
+    background-size: 100% 35rem;
     overflow: hidden;
+    background-position: center $local--spacingTop;
+    &:before {
+      height: $local--spacingTop;
+    }
     &__row {
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        padding-left: 0;
+        padding-right: 0;
+      }
       &:nth-of-type(2) {
         margin-top: calc($column-gutter*3);
       }
@@ -31,12 +53,21 @@
 }
 
 @media (--mobile) {
+  $local--spacingTop: calc($column-gutter*10);
  .about-us {
-    background-size: 100% 60rem;
+    background-size: 100% 80rem;
+    background-position: center $local--spacingTop;
+    padding-bottom: calc($column-gutter*4);
+    &:before {
+      height: $local--spacingTop;
+    }
     &__row {
-      &:nth-of-type(2) {
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
         padding-left: calc($column-gutter*4);
         padding-right: calc($column-gutter*4);
+      }
+      &:nth-of-type(2) {
         margin-top: calc($column-gutter*4);
       }
     }
@@ -44,9 +75,19 @@
 }
 
 @media (--row) {
- .about-us {
-    background-size: 100% auto;
+  $local--spacingTop: calc($column-gutter*12);
+  .about-us {
+    background-size: 100% 25rem;
+    background-position: center $local--spacingTop;
+    &:before {
+      height: $local--spacingTop;
+    }
     &__row {
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        padding-left: 0;
+        padding-right: 0;
+      }
       &:nth-of-type(1) {
         div {
           max-width: 640px;
