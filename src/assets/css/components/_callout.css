@@ -20,10 +20,10 @@
 @media (--mobile) {
   .callout {
     &__title {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
     &__description {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
     }
   }
 }
