@@ -15,23 +15,58 @@
     position: relative;
     z-index: 100;
   }
+  &--02 {
+    background-image: url("../images/svg/bg-angles-02.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
 @media (--mobile-max) {
   .screenshots {
-    margin-top: calc(-$column-gutter*6);
-    &:after {
-      top: 6rem;
-      height: calc(100% - 6rem);
+    &--01 {
+      margin-top: calc(-$column-gutter*6);
+      &:after {
+        top: 6rem;
+        height: calc(100% - 6rem);
+      }
     }
   }
 }
+
 @media (--mobile) {
   .screenshots {
-    margin-top: calc(-$column-gutter*12);
-    &:after {
-      top: 12rem;
-      height: calc(100% - 12rem);
+    &--01 {
+      margin-top: calc(-$column-gutter*12);
+      &:after {
+        top: 12rem;
+        height: calc(100% - 12rem);
+      }
+    }
+  }
+}
+
+@media (--mobile) {
+  .screenshots {
+    &--02 {
+      background-size: 100% 26rem;
+      background-position: center 8rem;
+      margin-top: -26rem;
+      &:after {
+        bottom: 0;
+        z-index: -1;
+        height: 14rem;
+      }
+    }
+  }
+}
+
+@media (--row) {
+  .screenshots {
+    &--02 {
+      background-size: 100% 30rem;
+      background-position: center 8rem;
+      margin-top: -28rem;
     }
   }
 }

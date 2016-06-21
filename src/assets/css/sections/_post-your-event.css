@@ -1,0 +1,28 @@
+.post-your-event {
+  padding: calc($column-gutter*2);
+  background-image:
+    radial-gradient(circle at top left, #02fd5c, transparent),
+    radial-gradient(circle at top right, #025cfd, transparent),
+    radial-gradient(circle at bottom left, #fda301, transparent),
+    radial-gradient(circle at bottom right, #fd01a3, transparent);
+  background-blend-mode: overlay;
+  color: #fff;
+  &__container {
+    lost-center: $row-width;
+  }
+}
+
+@media (--mobile) {
+  .post-your-event {
+    padding-top: calc($column-gutter*4);
+    padding-bottom: calc($column-gutter*32);
+    text-align: center;
+  }
+}
+
+@media (--row) {
+  .post-your-event {
+    padding-top: calc($column-gutter*6);
+    padding-bottom: calc($column-gutter*36);
+  }
+}

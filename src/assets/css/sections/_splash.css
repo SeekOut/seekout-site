@@ -18,6 +18,10 @@
   &__tagline {
     font-size: .85rem;
     margin: 0 0 calc($column-gutter*2);
+    em {
+      font-style: italic;
+      border-bottom: 2px solid #fff;
+    }
   }
 }
 

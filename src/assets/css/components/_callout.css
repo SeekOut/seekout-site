@@ -5,6 +5,7 @@
   &__description {
     margin-bottom: 0;
     color: $c-body-font--light;
+    .callout--white & { color: #fff; }
   }
 }
 

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 735">
+  <g transform="translate(0,80)" class="ui-phone ui-phone--left">
+    <use xlink:href="#ui-iphone-w-shadow" />
+    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+  </g>
+  <g transform="translate(520,120)" class="ui-phone ui-phone--front">
+    <use xlink:href="#ui-iphone-w-shadow" />
+    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+  </g>
+  <g transform="translate(260,0)" class="ui-phone ui-phone--front">
+    <use xlink:href="#ui-iphone-w-shadow" />
+    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+  </g>
+</svg>
