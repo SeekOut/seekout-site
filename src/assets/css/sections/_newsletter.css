@@ -29,9 +29,13 @@
     &--text {
       width: 380px;
       margin-right: $column-gutter;
+      padding-left: calc($column-gutter*3.75);
       max-width: 100%;
       background-color: #fff;
       box-shadow: 0 2px 0 0 color(#000 a(.125));
+      background-image: url("../images/svg/icon-email.svg");
+      background-repeat: no-repeat;
+      background-position: 1.25rem center;
       transition: all 150ms ease-out;
       &:focus {
         background-color: #fafafa;

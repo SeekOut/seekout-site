@@ -77,9 +77,11 @@ block content
       .callout
         h2.callout__title!= content.newsletter.callout.title
         p.callout__description!= content.newsletter.callout.description
-      form.mailform
-        input.mailform__input.mailform__input--text(type="text")
-        input.mailform__input.mailform__input--submit.btn.btn--filled.btn--filled-turq(type="submit" value="INVITE ME")
+
+      form.mailform(action="//seekout.us13.list-manage.com/subscribe/post?u=ae1931db620b59e9f14948603&amp;id=468bddb1fb" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+        input.mailform__input.mailform__input--text(type="email" value="" name="EMAIL" placeholder="Enter your email")
+        div(style="position: absolute; left: -5000px;" aria-hidden="true"): input(type="text" name="b_ae1931db620b59e9f14948603_468bddb1fb" tabindex="-1" value="")
+        input.mailform__input.mailform__input--submit.btn.btn--filled.btn--filled-turq(type="submit" value="INVITE ME" name="subscribe")
 
   footer.footer
     .footer__container

@@ -36,6 +36,20 @@ input {
   outline: 0;
   border: 0;
   -webkit-appearance: none;
+  font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+:-moz-placeholder {
+  color: #666;
+}
+::-moz-placeholder {
+  color: #666;
+}
+:-ms-input-placeholder {
+  color: #666;
 }
 
 .unicode {
