@@ -16,7 +16,7 @@
       <g fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10">
         <path d="M244 20h16M244 25h16M244 15h16"/>
       </g>
-      <text x="30" y="25" font-size="12">www.SeekOut.co</text>
+      <!-- <text x="30" y="25" font-size="12">www.SeekOut.co</text> -->
     </g>
   </defs>
   <g transform="translate(520,120)" class="ui-phone ui-phone--front">
