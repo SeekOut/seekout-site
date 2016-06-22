@@ -34,7 +34,7 @@ block content
         ul.icon-list
           each listItem in content.aboutUs.list
             li.icon-list__item
-              img.icon-list__icon(src="//placehold.it/50x50/444/333")
+              img.icon-list__icon(src="assets/images/svg/icon-#{listItem.iconFilename}.svg")
               h2.icon-list__title!= listItem.title
               p.icon-list__description!= listItem.description
 
@@ -53,7 +53,7 @@ block content
       ul.icon-list
         each listItem in content.postYourEvent.list
           li.icon-list__item
-            img.icon-list__icon(src="//placehold.it/50x50/444/333")
+            img.icon-list__icon(src="assets/images/svg/icon-#{listItem.iconFilename}.svg")
             h2.icon-list__title!= listItem.title
             p.icon-list__description!= listItem.description
 

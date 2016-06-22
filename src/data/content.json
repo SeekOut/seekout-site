@@ -18,15 +18,18 @@
     "list": [
       {
         "title": "EVENTS FOR EVERYONE",
-        "description": "Find every type of LGBTQ event. Simply search by location, type, or date — anytime, anywhere!"
+        "description": "Find every type of LGBTQ event. Simply search by location, type, or date — anytime, anywhere!",
+        "iconFilename": "rainbow"
       },
       {
         "title": "TRUSTED SOURCE",
-        "description": "Accurate, safe, and up-to-date. Posts come from community event organizers and are monitored."
+        "description": "Accurate, safe, and up-to-date. Posts come from community event organizers and are monitored.",
+        "iconFilename": "shield"
       },
       {
         "title": "SPREAD THE WORD",
-        "description": "SeekOut makes it easy for you to quickly share events with your friends and community members."
+        "description": "SeekOut makes it easy for you to quickly share events with your friends and community members.",
+        "iconFilename": "chat"
       }
     ]
   },
@@ -38,15 +41,18 @@
     "list": [
       {
         "title": "REACH THE RIGHT PEOPLE",
-        "description": "Connect with more people who are interested in your event — not just a limited amount of followers."
+        "description": "Connect with more people who are interested in your event — not just a limited amount of followers.",
+        "iconFilename": "network"
       },
       {
         "title": "SAVE TIME & MONEY",
-        "description": "Start saving on printing, distribution, and advertising with limited reach. Put money saved towards your event."
+        "description": "Start saving on printing, distribution, and advertising with limited reach. Put money saved towards your event.",
+        "iconFilename": "money"
       },
       {
         "title": "GET THE WORD OUT NOW",
-        "description": "Create, manage, and update your event in minutes. Simply do it on-the-go, from mobile or desktop."
+        "description": "Create, manage, and update your event in minutes. Simply do it on-the-go, from mobile or desktop.",
+        "iconFilename": "devices"
       }
     ]
   },
