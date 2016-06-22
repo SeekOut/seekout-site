@@ -9,7 +9,7 @@
     <g id="ui-iphone-w-shadow">
       <path fill="#000" fill-opacity=".25" d="M0 0h280v558H0z" clip-path="url(#dropShadow01)" style="filter: url(#blurFilter01);" />
       <path fill="#CCC" d="M280 554c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-32c0-2.2 1.8-4 4-4h272c2.2 0 4 1.8 4 4v32z"/>
-      <path fill="#FFF" d="M0 40h280v498H0z"/>
+      <!-- <path fill="#FFF" d="M0 40h280v498H0z"/> -->
       <path fill="#CCC" d="M0 20h280v20H0z"/>
       <path fill="#CCC" d="M280 36c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h272c2.2 0 4 1.8 4 4v32z"/>
       <path fill="#FFF" d="M228 28.5c0 2.2-1.7 4-4 4H24c-2 0-4-1.8-4-4v-17c0-2.2 2-4 4-4h200c2.3 0 4 1.8 4 4v17z"/>
@@ -21,10 +21,10 @@
   </defs>
   <g class="ui-phone ui-phone--back" transform="translate(222,80)">
     <use xlink:href="#ui-iphone-w-shadow" />
-    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+    <path class="ui-phone__screen" fill="#444" d="M0 40h280v498H0z"/>
   </g>
   <g class="ui-phone ui-phone--front">
     <use xlink:href="#ui-iphone-w-shadow" />
-    <path class="ui-phone__screen" fill="#fff" d="M0 40h280v498H0z"/>
+    <path class="ui-phone__screen" fill="#555" d="M0 40h280v498H0z"/>
   </g>
 </svg>
