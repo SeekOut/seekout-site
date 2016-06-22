@@ -13,9 +13,11 @@ block content
       h1.splash__headline Connect with your community.
       h2.splash__tagline A better way to find and post <em>all</em> LGBTQ events.
       a.btn.btn--filled.btn--filled-white(href="#") GET INVITED
+
   section.screenshots.screenshots--01
     .screenshots__container
       img(src="assets/images/svg/ui-desktop-iphone.svg")
+
   section.about-us
     .about-us__container
       .about-us__row
@@ -35,14 +37,17 @@ block content
               img.icon-list__icon(src="//placehold.it/50x50/444/333")
               h2.icon-list__title EVENTS FOR EVERYONE
               p.icon-list__description Find every type of LGBTQ event. Simply search by location, type, or date — anytime, anywhere!
+
   section.post-your-event
     .post-your-event__container
       .callout.callout--white
         h2.callout__title Post your event. It’s fast, easy, <strong>free!</strong>
         p.callout__description Organizing a public LGBTQ event? <br>SeekOut allows you to quickly create and share your event with everyone. <br>We’re basically the online word-of-mouth for your event.
+
   section.screenshots.screenshots--02
     .screenshots__container
       img(src="assets/images/svg/ui-iphones-trio.svg")
+
   section.why
     .why__container
       ul.icon-list
@@ -51,27 +56,22 @@ block content
             img.icon-list__icon(src="//placehold.it/50x50/444/333")
             h2.icon-list__title SAVE TIME &amp; MONEY
             p.icon-list__description Start saving on printing, distribution, and advertising with limited reach. Put money saved towards your event.
+
   section.testimonials
     .testimonials__container
       h2.testimonials__title We’re making something great. Here’s why...
       .testimonials__slider.slider.slider--testimonials
-        .slider__slide
-          blockquote.testimonials__blockquote (1) “I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”
-            cite Michelle, 42 | Event-goer
-        .slider__slide
-          blockquote.testimonials__blockquote (2) “I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”
-            cite Michelle, 42 | Event-goer
-        .slider__slide
-          blockquote.testimonials__blockquote (3) “I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”
-            cite Michelle, 42 | Event-goer
-        .slider__slide
-          blockquote.testimonials__blockquote (4) “I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”
-            cite Michelle, 42 | Event-goer
+        each testimonial in content.testimonials
+          .slider__slide
+            blockquote.testimonials__blockquote= testimonial.quoteContent
+              cite= testimonial.cite
+
   section.the-community
     .the-community__container
       .callout.callout--white
         h2.callout__title Made for the community by the community.
         p.callout__description We’re currently building and will be launching soon in San Francisco! <br>Don’t worry — many other cities coming, too :)
+
   section.newsletter
     .newsletter__container
       .callout

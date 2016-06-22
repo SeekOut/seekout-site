@@ -104,7 +104,8 @@ paths.src = {
   fonts  : `${paths.base.src}assets/fonts`,
   js     : `${paths.base.src}assets/js`,
   images : `${paths.base.src}assets/images`,
-  html   : `${paths.base.src}html`
+  html   : `${paths.base.src}html`,
+  data   : `${paths.base.src}data`
 }
 
 paths.dist = {
@@ -169,6 +170,11 @@ gulp.task('static-files', () => {
 gulp.task('html', () => {
   gulp.src([`${paths.src.html}/*.jade`])
     .pipe(jadeInheritance({ basedir: paths.src.html }).on('error', onError))
+    .pipe(data(file => {
+      return {
+        content:          requireUncached(`${paths.src.data}/content.json`)
+      }
+    })).on('error', onError)
     .pipe(jade()).on('error', onError)
     .pipe(gulp.dest(paths.dist.html)).on('error', onError)
 })
@@ -329,7 +335,8 @@ gulp.task('deploy', () => {
 gulp.task('watch', ['browsersync'], () => {
   global.isWatching = true
   gulp.watch([`${paths.src.html}/**/*.jade`,
-              `${paths.src.images}/**/*.svg`], ['html'])
+              `${paths.src.images}/**/*.svg`,
+              `${paths.src.data}/**/*.json`], ['html'])
   gulp.watch(`${paths.src.css}/**/*`, ['css'])
   gulp.watch(`${paths.src.fonts}/**/*`, ['fonts'])
   gulp.watch(`${paths.src.js}/**/*.{js,coffee}`, ['js'])

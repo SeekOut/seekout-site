@@ -1,0 +1,20 @@
+{
+   "testimonials":[
+      {
+         "quoteContent": "“I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”",
+         "cite": "Michelle, 42 | Event-goer"
+      },
+      {
+         "quoteContent": "“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”",
+         "cite": "Charles, 24 | Parent of two"
+      },
+      {
+         "quoteContent": "“Curabitur blandit tempus porttitor. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”",
+         "cite": "James, 36 | Outdoor enthusiast"
+      },
+      {
+         "quoteContent": "“Maecenas sed diam eget risus varius blandit sit amet non magna.”",
+         "cite": "Nancy, 19 | Foodie"
+      }
+   ]
+}
