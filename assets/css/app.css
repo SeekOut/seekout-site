@@ -916,9 +916,12 @@ input {
 .slider .slick-dots li {
   position: relative;
   display: inline-block;
+  width: 20px;
+  height: 20px;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
+  transition: all ease-out 150ms;
 }
 
 .slider .slick-dots li.slick-active button {
@@ -926,16 +929,18 @@ input {
 }
 
 .slider .slick-dots button {
-  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 5px;
   cursor: pointer;
   color: transparent;
   border: 2px solid #888;
   outline: none;
-  background-color: #fff;
-  border-radius: 50%;
+  background: transparent;
 }
 
 .slider .slick-list {
@@ -1313,10 +1318,10 @@ input {
 .post-your-event {
   padding: 2rem;
   background-image:
-    radial-gradient(circle at bottom left, #02fd5c, transparent),
-    radial-gradient(circle at bottom right, #025cfd, transparent),
-    radial-gradient(circle at top left, #fda301, transparent),
-    radial-gradient(circle at top right, #fd01a3, transparent);
+    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
+    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
+    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
+    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
   background-blend-mode: overlay;
   color: #fff;
 }
@@ -1457,11 +1462,11 @@ input {
 
 .splash {
   padding: 2rem;
-  background:
-    radial-gradient(circle at top left,#02fd5c,transparent),
-    radial-gradient(circle at top right,#025cfd,transparent),
-    radial-gradient(circle at bottom left, #fda301,transparent),
-    radial-gradient(circle at bottom right, #fd01a3,transparent);
+  background-image:
+    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
+    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
+    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
+    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
   background-blend-mode: overlay;
   color: #fff;
   text-align: center;
@@ -1616,10 +1621,10 @@ input {
   text-align: center;
   background-image:
     url("../images/bg-city.jpg"),
-    radial-gradient(circle at bottom right, #02fd5c, transparent),
-    radial-gradient(circle at bottom left, #025cfd, transparent),
-    radial-gradient(circle at top left, #fd01a3, transparent),
-    radial-gradient(circle at top right, #fda301, transparent);
+    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
+    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
+    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
+    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center center;
