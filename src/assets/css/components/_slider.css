@@ -5,16 +5,15 @@
   }
   .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 2.5rem;
     z-index: 200;
     cursor: pointer;
     &:first-of-type {
       left: 0;
-      transform: scaleX(-1) translateY(-50%);
+      transform: scaleX(-1);
     }
     &:last-of-type  {
       right: 0;
-      transform: translateY(-50%);
     }
   }
   .slick-dots {
@@ -24,8 +23,8 @@
     li {
       position: relative;
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       margin: 0 5px;
       padding: 0;
       cursor: pointer;
@@ -36,9 +35,9 @@
       font-size: 0;
       line-height: 0;
       display: block;
-      width: 20px;
-      height: 20px;
-      border-radius: 10px;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
       padding: 5px;
       cursor: pointer;
       color: transparent;
@@ -73,6 +72,14 @@
       &:not(:first-of-type) {
         display: none;
       }
+    }
+  }
+}
+
+@media (--mobile) {
+  .slider {
+    .slick-dots {
+      margin-top: calc($column-gutter*4);
     }
   }
 }

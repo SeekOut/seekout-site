@@ -11,7 +11,7 @@ jQuery(function($){
     'prevArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>',
     'nextArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>',
     'arrows': true,
-    'dots': false,
+    'dots': true,
     'responsive': [
       {
         'breakpoint': 767,

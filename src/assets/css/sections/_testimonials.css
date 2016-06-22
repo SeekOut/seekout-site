@@ -41,8 +41,8 @@
     }
     &__blockquote {
       font-size: 1.5rem;
-      padding-right: calc($column-gutter*3);
-      padding-left: calc($column-gutter*3);
+      padding-right: calc($column-gutter*5);
+      padding-left: calc($column-gutter*5);
       cite {
         font-size: 83.3333333%;
       }
