@@ -47,20 +47,24 @@
   },
   "testimonials":[
     {
-       "quoteContent": "“I often travel to other cities and have a hard time finding queer events that I’m interested in. Also, when I search for stuff online, the events are usually out-of-date or not accurate.”",
-       "cite": "Michelle, 42 | Event-goer"
+       "quoteContent": "“When I travel to other cities, I have a hard time finding queer events that interest me. And when I search for stuff online, the information is usually out-of-date or not accurate.”",
+       "cite": "Quinn, 26 | Event-goer"
     },
     {
-       "quoteContent": "“Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”",
-       "cite": "Charles, 24 | Parent of two"
+       "quoteContent": "“As a promoter, I need to reach new people in order to keep my event going. It’s a challenge for me to find a broader audience outside of my regular crowd.”",
+       "cite": "Maria, 32 | Promoter"
     },
     {
-       "quoteContent": "“Curabitur blandit tempus porttitor. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”",
-       "cite": "James, 36 | Outdoor enthusiast"
+       "quoteContent": "“I wish I could find everything listed in one place. I often hear about events after they’ve happened and feel like I missed out.”",
+       "cite": "David, 52 | Event-goer"
     },
     {
-       "quoteContent": "“Maecenas sed diam eget risus varius blandit sit amet non magna.”",
-       "cite": "Nancy, 19 | Foodie"
+       "quoteContent": "“The time and cost of promoting really adds up. My time is limited. I’d love to be able to post my event directly to the community within a matter of minutes.”",
+       "cite": "Terrence, 45 | Promoter"
+    },
+    {
+       "quoteContent": "“I know there’s so much happening beyond nightlife, I just can’t seem to find it. It would be great to know about everything that’s going on in our community.” ",
+       "cite": "Sarah, 37 | Event-goer"
     }
   ]
 }
