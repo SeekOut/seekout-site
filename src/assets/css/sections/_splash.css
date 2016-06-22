@@ -1,11 +1,14 @@
 .splash {
   padding: calc($column-gutter*2);
-  background-image:
+/*   background-image:
     linear-gradient( 315deg, #fd01a3, color(#fd01a3 a(0)) ),
     linear-gradient( 225deg, #025cfd, color(#025cfd a(0)) ),
     linear-gradient( 45deg, color(#FFA12F a(1)), color(#FFA12F a(0)) ),
     linear-gradient( 135deg, color(#02fd5c a(.5)), color(#02fd5c a(0)) );
-  background-blend-mode: overlay;
+  background-blend-mode: overlay; */
+  background: linear-gradient(133deg, #f54747, #f547c0, #be47f5, #4769f5, #42c3e1, #33d3aa, #89d333, #eecb0a, #e6903d);
+  background-size: 1800% 1800%;
+  animation: AnimationName 30s ease infinite;
   color: #fff;
   text-align: center;
   &__container {
