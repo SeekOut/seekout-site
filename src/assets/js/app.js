@@ -22,4 +22,17 @@ jQuery(function($){
       }
     ]
   });
+
+  /*
+    GLOBAL smooth scroll
+  */
+
+  $('[href="#anchor--newsletter"]').click(function() {
+    $('html, body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000, 'swing', function(){
+      $('.mailform__input--text').focus();
+    });
+    return false;
+  });
 });

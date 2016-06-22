@@ -22,7 +22,7 @@
   },
   "overrides": {
     "jquery": {
-      "main": ["./dist/jquery.slim.min.js"]
+      "main": ["./dist/jquery.min.js"]
     }
   }
 }
