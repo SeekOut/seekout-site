@@ -10,9 +10,9 @@ block content
   header.splash
     .splash__container
       include ../assets/images/svg/logo-seekout.svg
-      h1.splash__headline Connect with your community.
-      h2.splash__tagline A better way to find and post <em>all</em> LGBTQ events.
-      a.btn.btn--filled.btn--filled-white(href="#anchor--newsletter") GET INVITED
+      h1.splash__headline!= content.splash.headline
+      h2.splash__tagline!= content.splash.tagline
+      a.btn.btn--filled.btn--filled-white(href="#anchor--newsletter")!= content.splash.link
 
   section.screenshots.screenshots--01
     .screenshots__container
@@ -23,20 +23,20 @@ block content
       .about-us__row
         .callout
           h2.callout__title!= content.aboutUs.callouts[0].title
-          p.callout__description= content.aboutUs.callouts[0].description
+          p.callout__description!= content.aboutUs.callouts[0].description
       .about-us__row
         .about-us__screenshots
           img(src="assets/images/svg/ui-iphones.svg")
         .about-us__callout.callout
           h2.callout__title!= content.aboutUs.callouts[1].title
-          p.callout__description= content.aboutUs.callouts[1].description
+          p.callout__description!= content.aboutUs.callouts[1].description
       .about-us__row
         ul.icon-list
           each listItem in content.aboutUs.list
             li.icon-list__item
               img.icon-list__icon(src="//placehold.it/50x50/444/333")
-              h2.icon-list__title= listItem.title
-              p.icon-list__description= listItem.description
+              h2.icon-list__title!= listItem.title
+              p.icon-list__description!= listItem.description
 
   section.post-your-event
     .post-your-event__container
@@ -54,29 +54,29 @@ block content
         each listItem in content.postYourEvent.list
           li.icon-list__item
             img.icon-list__icon(src="//placehold.it/50x50/444/333")
-            h2.icon-list__title= listItem.title
-            p.icon-list__description= listItem.description
+            h2.icon-list__title!= listItem.title
+            p.icon-list__description!= listItem.description
 
   section.testimonials
     .testimonials__container
-      h2.testimonials__title We’re making something great. Here’s why...
+      h2.testimonials__title!= content.testimonials.title
       .testimonials__slider.slider.slider--testimonials
-        each testimonial in content.testimonials
+        each testimonial in content.testimonials.list
           .slider__slide
-            blockquote.testimonials__blockquote= testimonial.quoteContent
-              cite= testimonial.cite
+            blockquote.testimonials__blockquote!= testimonial.quoteContent
+              cite!= testimonial.cite
 
   section.the-community
     .the-community__container
       .callout.callout--white
-        h2.callout__title Made for the community by the community.
-        p.callout__description We’re currently building and will be launching soon in San Francisco! <br>Don’t worry — many other cities coming, too :)
+        h2.callout__title!= content.theCommunity.callout.title
+        p.callout__description!= content.theCommunity.callout.description
 
   section.newsletter#anchor--newsletter
     .newsletter__container
       .callout
-        h2.callout__title Be a part of it.
-        p.callout__description Get invited to receive early access and updates. <br>We’re all in this together. Let's connect, build, and grow our communities.
+        h2.callout__title!= content.newsletter.callout.title
+        p.callout__description!= content.newsletter.callout.description
       form.mailform
         input.mailform__input.mailform__input--text(type="text")
         input.mailform__input.mailform__input--submit.btn.btn--filled.btn--filled-turq(type="submit" value="INVITE ME")

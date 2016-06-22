@@ -1,4 +1,9 @@
 {
+  "splash": {
+    "headline": "Connect with your community.",
+    "tagline": "A better way to find and post <em>all</em> LGBTQ events.",
+    "link": "GET INVITED"
+  },
   "aboutUs": {
     "callouts": [
       {
@@ -45,26 +50,41 @@
       }
     ]
   },
-  "testimonials":[
-    {
-       "quoteContent": "“When I travel to other cities, I have a hard time finding queer events that interest me. And when I search for stuff online, the information is usually out-of-date or not accurate.”",
-       "cite": "Quinn, 26 | Event-goer"
-    },
-    {
-       "quoteContent": "“As a promoter, I need to reach new people in order to keep my event going. It’s a challenge for me to find a broader audience outside of my regular crowd.”",
-       "cite": "Maria, 32 | Promoter"
-    },
-    {
-       "quoteContent": "“I wish I could find everything listed in one place. I often hear about events after they’ve happened and feel like I missed out.”",
-       "cite": "David, 52 | Event-goer"
-    },
-    {
-       "quoteContent": "“The time and cost of promoting really adds up. My time is limited. I’d love to be able to post my event directly to the community within a matter of minutes.”",
-       "cite": "Terrence, 45 | Promoter"
-    },
-    {
-       "quoteContent": "“I know there’s so much happening beyond nightlife, I just can’t seem to find it. It would be great to know about everything that’s going on in our community.” ",
-       "cite": "Sarah, 37 | Event-goer"
+  "testimonials": {
+    "title": "We’re making something great. Here’s why...",
+    "list": [
+      {
+         "quoteContent": "“When I travel to other cities, I have a hard time finding queer events that interest me. And when I search for stuff online, the information is usually out-of-date or not accurate.”",
+         "cite": "Quinn, 26 | Event-goer"
+      },
+      {
+         "quoteContent": "“As a promoter, I need to reach new people in order to keep my event going. It’s a challenge for me to find a broader audience outside of my regular crowd.”",
+         "cite": "Maria, 32 | Promoter"
+      },
+      {
+         "quoteContent": "“I wish I could find everything listed in one place. I often hear about events after they’ve happened and feel like I missed out.”",
+         "cite": "David, 52 | Event-goer"
+      },
+      {
+         "quoteContent": "“The time and cost of promoting really adds up. My time is limited. I’d love to be able to post my event directly to the community within a matter of minutes.”",
+         "cite": "Terrence, 45 | Promoter"
+      },
+      {
+         "quoteContent": "“I know there’s so much happening beyond nightlife, I just can’t seem to find it. It would be great to know about everything that’s going on in our community.” ",
+         "cite": "Sarah, 37 | Event-goer"
+      }
+    ]
+  },
+  "theCommunity":  {
+    "callout": {
+      "title": "Made for the community by the community.",
+      "description": "We’re currently building and will be launching soon in San Francisco! <br>Don’t worry — many other cities coming, too :)"
     }
-  ]
+  },
+  "newsletter": {
+    "callout": {
+      "title": "Be a part of it.",
+      "description": "Get invited to receive early access and updates. <br>We’re all in this together. Let's connect, build, and grow our communities."
+    }
+  }
 }
