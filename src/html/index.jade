@@ -12,7 +12,7 @@ block content
       include ../assets/images/svg/logo-seekout.svg
       h1.splash__headline Connect with your community.
       h2.splash__tagline A better way to find and post <em>all</em> LGBTQ events.
-      a.btn.btn--filled.btn--filled-white(href="#") GET INVITED
+      a.btn.btn--filled.btn--filled-white(href="#anchor--newsletter") GET INVITED
 
   section.screenshots.screenshots--01
     .screenshots__container
@@ -22,27 +22,27 @@ block content
     .about-us__container
       .about-us__row
         .callout
-          h2.callout__title Together we can <br>connect, build, and grow.
-          p.callout__description SeekOut is a website that helps bring the entire LGBTQ community together. From family events, fundraisers, sports, music, art and more — it's all here. Our goal is to provide more awareness and participation for all events.
+          h2.callout__title!= content.aboutUs.callouts[0].title
+          p.callout__description= content.aboutUs.callouts[0].description
       .about-us__row
         .about-us__screenshots
           img(src="assets/images/svg/ui-iphones.svg")
         .about-us__callout.callout
-          h2.callout__title Find, share, meet.
-          p.callout__description It’s all about you and what you want to do. Whether you’re a local or traveler, discover LGBTQ events that connect you with people who share your interests. All in one place.
+          h2.callout__title!= content.aboutUs.callouts[1].title
+          p.callout__description= content.aboutUs.callouts[1].description
       .about-us__row
         ul.icon-list
-          - for (var i=0; i<3; i++)
+          each listItem in content.aboutUs.list
             li.icon-list__item
               img.icon-list__icon(src="//placehold.it/50x50/444/333")
-              h2.icon-list__title EVENTS FOR EVERYONE
-              p.icon-list__description Find every type of LGBTQ event. Simply search by location, type, or date — anytime, anywhere!
+              h2.icon-list__title= listItem.title
+              p.icon-list__description= listItem.description
 
   section.post-your-event
     .post-your-event__container
       .callout.callout--white
-        h2.callout__title Post your event. It’s fast, easy, <strong>free!</strong>
-        p.callout__description Organizing a public LGBTQ event? <br>SeekOut allows you to quickly create and share your event with everyone. <br>We’re basically the online word-of-mouth for your event.
+        h2.callout__title!= content.postYourEvent.callout.title
+        p.callout__description!= content.postYourEvent.callout.description
 
   section.screenshots.screenshots--02
     .screenshots__container
@@ -51,11 +51,11 @@ block content
   section.why
     .why__container
       ul.icon-list
-        - for (var i=0; i<3; i++)
+        each listItem in content.postYourEvent.list
           li.icon-list__item
             img.icon-list__icon(src="//placehold.it/50x50/444/333")
-            h2.icon-list__title SAVE TIME &amp; MONEY
-            p.icon-list__description Start saving on printing, distribution, and advertising with limited reach. Put money saved towards your event.
+            h2.icon-list__title= listItem.title
+            p.icon-list__description= listItem.description
 
   section.testimonials
     .testimonials__container
