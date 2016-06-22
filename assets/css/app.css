@@ -1318,10 +1318,10 @@ input {
 .post-your-event {
   padding: 2rem;
   background-image:
-    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
-    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
-    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
-    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
+    linear-gradient( 315deg, #fd01a3, rgba(253, 1, 163, 0) ),
+    linear-gradient( 225deg, #025cfd, rgba(2, 92, 253, 0) ),
+    linear-gradient( 45deg, rgb(255, 161, 47), rgba(255, 161, 47, 0) ),
+    linear-gradient( 135deg, rgba(2, 253, 92, 0.5), rgba(2, 253, 92, 0) );
   background-blend-mode: overlay;
   color: #fff;
 }
@@ -1463,10 +1463,10 @@ input {
 .splash {
   padding: 2rem;
   background-image:
-    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
-    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
-    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
-    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
+    linear-gradient( 315deg, #fd01a3, rgba(253, 1, 163, 0) ),
+    linear-gradient( 225deg, #025cfd, rgba(2, 92, 253, 0) ),
+    linear-gradient( 45deg, rgb(255, 161, 47), rgba(255, 161, 47, 0) ),
+    linear-gradient( 135deg, rgba(2, 253, 92, 0.5), rgba(2, 253, 92, 0) );
   background-blend-mode: overlay;
   color: #fff;
   text-align: center;
@@ -1621,10 +1621,10 @@ input {
   text-align: center;
   background-image:
     url("../images/bg-city.jpg"),
-    radial-gradient(circle at bottom right, #02fd5c, rgba(2, 253, 92, 0)),
-    radial-gradient(circle at bottom left, #025cfd, rgba(2, 92, 253, 0)),
-    radial-gradient(circle at top left, #fd01a3, rgba(253, 1, 163, 0)),
-    radial-gradient(circle at top right, #fda301, rgba(253, 163, 1, 0));
+    linear-gradient( 315deg, #fd01a3, rgba(253, 1, 163, 0) ),
+    linear-gradient( 225deg, #025cfd, rgba(2, 92, 253, 0) ),
+    linear-gradient( 45deg, rgb(255, 161, 47), rgba(255, 161, 47, 0) ),
+    linear-gradient( 135deg, rgba(2, 253, 92, 0.5), rgba(2, 253, 92, 0) );
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center center;
