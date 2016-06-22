@@ -4,6 +4,7 @@
 @import "./_settings";
 @import "./_global";
 @import "./_ie";
+@import "./_animation";
 
 @import "./components/**/*";
 @import "./modules/**/*";

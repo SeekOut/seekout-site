@@ -4,5 +4,11 @@
 
 // ------------------------------------------
 
-// Get rid of no-js
-document.querySelector('html').classList.remove('no-js');
+jQuery(function($){
+  $('.slider--testimonials').slick({
+    'fade': true,
+    'zIndex': 200,
+    'prevArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>',
+    'nextArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>'
+  });
+});

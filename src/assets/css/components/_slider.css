@@ -1,0 +1,42 @@
+.slider {
+  position: relative;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    cursor: pointer;
+    &:first-of-type {
+      left: 0;
+      transform: scaleX(-1) translateY(-50%);
+    }
+    &:last-of-type  {
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &:not(.slick-initialized) {
+    .slider__slide {
+      &:first-of-type {
+        position: relative;
+        > * {
+          opacity: .25;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: calc(50% - 15px);
+          left: calc(50% - 15px);
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 5px solid color(#000 tint(25%));
+          border-bottom-color: $c-turq;
+          animation: spin 1s infinite;
+        }
+      }
+      &:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }
+}
