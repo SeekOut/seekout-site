@@ -1,10 +1,10 @@
 .post-your-event {
   padding: calc($column-gutter*2);
   background-image:
-    radial-gradient(circle at bottom right, #02fd5c, color(#02fd5c a(0))),
-    radial-gradient(circle at bottom left, #025cfd, color(#025cfd a(0))),
-    radial-gradient(circle at top left, #fd01a3, color(#fd01a3 a(0))),
-    radial-gradient(circle at top right, #fda301, color(#fda301 a(0)));
+    linear-gradient( 315deg, #fd01a3, color(#fd01a3 a(0)) ),
+    linear-gradient( 225deg, #025cfd, color(#025cfd a(0)) ),
+    linear-gradient( 45deg, color(#FFA12F a(1)), color(#FFA12F a(0)) ),
+    linear-gradient( 135deg, color(#02fd5c a(.5)), color(#02fd5c a(0)) );
   background-blend-mode: overlay;
   color: #fff;
   &__container {
