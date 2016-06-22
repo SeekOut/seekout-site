@@ -1,10 +1,7 @@
 .the-community {
   padding: calc($column-gutter*2) calc($column-gutter*2) calc($column-gutter*16);
   text-align: center;
-  background-image:
-    url("../images/bg-city.jpg"),
-    url("../images/bg-gradient.jpg");
-  background-blend-mode: overlay;
+  background-image: url("../images/bg-gradient-city.jpg");
   background-size: cover;
   background-position: center center;
   color: #fff;
