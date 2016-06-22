@@ -1,5 +1,8 @@
 .slider {
   position: relative;
+  &__slide {
+    outline: none;
+  }
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -13,6 +16,34 @@
       right: 0;
       transform: translateY(-50%);
     }
+  }
+  .slick-dots {
+    margin: $column-gutter 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      &.slick-active button { background-color: $c-slider-pag-dots; }
+    }
+    button {
+      text-indent: -9999px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      color: transparent;
+      border: 2px solid $c-slider-pag-dots;
+      outline: none;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+  .slick-list {
+    transition: height 500ms ease-out;
   }
   &:not(.slick-initialized) {
     .slider__slide {
