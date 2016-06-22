@@ -11,6 +11,13 @@
   &__container {
     lost-center: $row-width;
   }
+  .logo-seekout {
+    width: 160px;
+    height: 99px;
+    path {
+      fill: #fff;
+    }
+  }
   &__headline {
     font-size: 1.25rem;
     margin: $column-gutter 0;

@@ -8,10 +8,6 @@
     letter-spacing: .05rem;
     padding: $column-gutter calc($column-gutter*3);
     transition: all 150ms ease-out;
-    &:active {
-      transform: translateY(1.5px);
-      box-shadow: none;
-    }
     &-white {
       background-color: #fff;
       color: $c-body-font;
@@ -27,6 +23,10 @@
       &:focus {
         box-shadow: 0 2px 0 0 color(#000 a(.125));
       }
+    }
+    &:active {
+      transform: translateY(1.5px);
+      box-shadow: none;
     }
   }
 }

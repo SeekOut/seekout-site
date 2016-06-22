@@ -5,10 +5,15 @@
   &__container {
     lost-center: $row-width;
   }
-  &__logo {
+  .logo-seekout {
     display: block;
     margin: 0 auto;
     margin-bottom: calc($column-gutter*2);
+    width: 100px;
+    height: 62px;
+    path {
+      fill: #666;
+    }
   }
   a {
     position: relative;
