@@ -3,10 +3,7 @@
   text-align: center;
   background-image:
     url("../images/bg-city.jpg"),
-    linear-gradient( 315deg, #fd01a3, color(#fd01a3 a(0)) ),
-    linear-gradient( 225deg, #025cfd, color(#025cfd a(0)) ),
-    linear-gradient( 45deg, color(#FFA12F a(1)), color(#FFA12F a(0)) ),
-    linear-gradient( 135deg, color(#02fd5c a(.5)), color(#02fd5c a(0)) );
+    url("../images/bg-gradient.jpg");
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center center;

@@ -7,8 +7,8 @@
   }
 }
 
-@keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
+@keyframes gradientTransition {
+  0% {background-position:10% 0%}
+  50% {background-position:91% 100%}
+  100% {background-position:10% 0%}
 }
