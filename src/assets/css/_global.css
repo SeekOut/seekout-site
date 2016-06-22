@@ -7,7 +7,9 @@ body {
   font-family: $body-font-family;
   font-weight: 300;
   color: $c-body-font;
-  > section {
+  > header,
+  > section,
+  > footer {
     overflow-x: hidden;
   }
 }
@@ -34,4 +36,8 @@ input {
   outline: 0;
   border: 0;
   -webkit-appearance: none;
+}
+
+.unicode {
+  font-family: verdana, sans-serif;
 }
