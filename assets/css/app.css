@@ -1489,10 +1489,6 @@ input {
   z-index: 100;
 }
 
-.screenshots img {
-  opacity: .5;
-}
-
 .screenshots--01 {
   margin-top: -6rem;
   margin-bottom: -1rem;
