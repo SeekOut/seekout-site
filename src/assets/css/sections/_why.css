@@ -7,15 +7,13 @@
 }
 @media (--mobile) {
   .why {
-    padding-left: calc($column-gutter*6);
-    padding-right: calc($column-gutter*6);
+    padding-left: calc($column-gutter*8);
+    padding-right: calc($column-gutter*8);
     padding-bottom: calc($column-gutter*4);
   }
 }
 @media (--row) {
   .why {
-    padding-left: calc($column-gutter*2);
-    padding-right: calc($column-gutter*2);
     padding-bottom: calc($column-gutter*6);
   }
 }
