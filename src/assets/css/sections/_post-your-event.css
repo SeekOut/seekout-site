@@ -1,5 +1,5 @@
 .post-your-event {
-  padding: calc($column-gutter*2);
+  padding: calc($column-gutter*2) calc($column-gutter*2) calc($column-gutter*28);
   background-image: url("../images/bg-gradient.jpg");
   background-size: cover;
   color: #fff;
@@ -29,6 +29,6 @@
 @media (--row) {
   .post-your-event {
     padding-top: calc($column-gutter*6);
-    padding-bottom: calc($column-gutter*36);
+    padding-bottom: calc($column-gutter*34);
   }
 }

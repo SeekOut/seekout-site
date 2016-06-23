@@ -9,11 +9,6 @@ body {
   color: $c-body-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  > header,
-  > section,
-  > footer {
-    overflow-x: hidden;
-  }
 }
 
 h1,

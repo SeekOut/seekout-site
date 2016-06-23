@@ -13,10 +13,12 @@ $row-width:                    940px;
 $row-width-max:                939px;
 $mobile-width:                 768px;
 $mobile-width-max:             767px;
-$iPhoneUIBreakpoint:           420px;
+$iphoneUI-width:               420px;
+$iphoneUI-width-max:           419px;
 
-@custom-media --row        screen and (min-width: $row-width);
-@custom-media --row-max    screen and (max-width: $row-width-max);
-@custom-media --mobile     screen and (min-width: $mobile-width);
-@custom-media --mobile-max screen and (max-width: $mobile-width-max);
-@custom-media --uiIphone   screen and (min-width: $iPhoneUIBreakpoint);
+@custom-media --row            screen and (min-width: $row-width);
+@custom-media --row-max        screen and (max-width: $row-width-max);
+@custom-media --mobile         screen and (min-width: $mobile-width);
+@custom-media --mobile-max     screen and (max-width: $mobile-width-max);
+@custom-media --uiIphone       screen and (min-width: $iphoneUI-width);
+@custom-media --uiIphone-max   screen and (max-width: $iphoneUI-width-max);
