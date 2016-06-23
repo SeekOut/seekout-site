@@ -23,6 +23,10 @@
       top: 6rem;
       height: calc(100% - 5.9rem);
     }
+    img {
+      position: relative;
+      z-index: 100;
+    }
     img[src*="desktop"] {
       display: none;
     }
@@ -67,7 +71,7 @@
       }
       img[src*="desktop"] {
         display: block;
-        width: 1000px;
+        width: 1018px;
         height: auto;
       }
       img[src*="iphone"] {
@@ -96,15 +100,9 @@
 @media (--row) {
   .screenshots {
     &--01 {
-      img[src*="desktop"] {
-        width: 108.25%;
-      }
       img[src*="iphone"] {
-        position: absolute;
-        bottom: 0;
         right: 6.5%;
         width: 340px;
-        height: auto;
       }
     }
     &--02 {
