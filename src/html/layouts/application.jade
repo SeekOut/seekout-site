@@ -1,16 +1,18 @@
 block variables
   - var pageTemplate = 'default'
-  - var pageTitle = ''
-  - var metadataURL = 'http://localhost:1111/'
-  - var metadataImage = 'http://localhost:1111/'
-  - var metadataDescription = 'null'
+  - var siteName = 'SeekOut'
+  - var pageTitle = 'SeekOut – A better way to find and post all LGBTQ events'
+  - var metadataURL = 'https://seekout.github.io/seekout-site/'
+  - var metadataImage = 'https://seekout.github.io/seekout-site/assets/images/og-image.jpg'
+  - var metadataDescription = 'SeekOut is a website that helps bring the entire LGBTQ community together. From family events, fundraisers, sports, music, art and more — it’s all here. Our goal is to provide more awareness and participation for all events.'
+  - var twitterHandle = '@SeekOutLGBTQ'
 
 doctype html
 html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title #{ (pageTitle === '') ? pageTitle + 'SeekOut' : 'SeekOut'}
+    title= pageTitle
     script.
       if (typeof Array.from === 'undefined') {
         var es6Script = document.createElement('script');
