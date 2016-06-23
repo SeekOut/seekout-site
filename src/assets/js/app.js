@@ -35,4 +35,10 @@ jQuery(function($){
     });
     return false;
   });
+
+  $(".popup-link").click(function(){
+    var window_size = this.getAttribute('data-popup-size');
+    window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,' + window_size);
+    return false;
+  });
 });

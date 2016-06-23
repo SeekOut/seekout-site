@@ -15,7 +15,7 @@
       fill: #666;
     }
   }
-  a {
+  p a {
     position: relative;
     text-decoration: none;
     color: $c-turq;
@@ -74,6 +74,10 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
