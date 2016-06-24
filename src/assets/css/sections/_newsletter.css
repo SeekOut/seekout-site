@@ -1,4 +1,5 @@
 .newsletter {
+  position: relative;
   padding: calc($column-gutter*2);
   text-align: center;
   background-color: $c-gray--light;
@@ -25,6 +26,61 @@
 
 .mailform {
   margin-top: calc($column-gutter*3);
+  &.is-waiting {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 300;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: color($c-gray--light a(.5));
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      z-index: 310;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid color(#000 tint(25%));
+      border-bottom-color: $c-turq;
+      animation: spin 1s infinite;
+    }
+  }
+  &.is-errored {
+    position: relative;
+    pointer-events: none;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 300;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: color($c-gray--light a(.75));
+    }
+    &:after {
+      content: "Seems like something went wrong. Try again later?";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 310;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: #444;
+      color: #fff;
+      padding: calc($column-gutter/2) $column-gutter;
+      border-radius: 4px;
+      cursor: pointer;
+      pointer-events: initial;
+    }
+  }
   &__input {
     border-radius: 4px;
     padding: $column-gutter;
@@ -47,6 +103,10 @@
       padding-right: calc($column-gutter*2);
       padding-left: calc($column-gutter*2);
     }
+  }
+  &__hp {
+    position: absolute;
+    left: -5000px;
   }
 }
 

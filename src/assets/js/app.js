@@ -1,5 +1,10 @@
+import Mailform from './lib/mailform.js'
 
 jQuery(function($){
+  /*
+    Mailchimp Newsletter Submit binding
+  */
+  let mailform = new Mailform('.mailform');
 
   /*
     Carousels
