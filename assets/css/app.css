@@ -1104,6 +1104,11 @@ input {
   width: 2.5rem;
 }
 
+.social-links--large img {
+  height: 3.75rem;
+  width: 3.75rem;
+}
+
 @media         screen and (min-width: 768px) {
   .social-links__title {
     margin: 2rem 0;
@@ -1456,7 +1461,7 @@ input {
 }
 
 .mailform.is-errored:after {
-  content: "Seems like something went wrong. Try again later?";
+  content: attr(data-error);
   position: absolute;
   top: 50%;
   left: 50%;

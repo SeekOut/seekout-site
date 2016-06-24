@@ -157,7 +157,7 @@ var Mailform = function () {
       $(this.el).removeClass('is-waiting');
       if (data.result != "success") {
         console.error(data.msg);
-        this.errorCallback();
+        this.errorCallback(data.msg);
       } else {
         console.log('success.. and success!');
         $(this.el).closest(this.parentEl).addClass('is-success');
@@ -169,6 +169,13 @@ var Mailform = function () {
       var _this3 = this;
 
       // perform error handling
+      var errMessage = 'Seems like something went wrong. Try again later?';
+      if (err) {
+        if (err.indexOf('already subscribed') > -1) {
+          errMessage = 'Looks like you’re already subscribed! :)';
+        }
+      }
+      $(this.el).attr('data-error', errMessage);
       $(this.el).addClass('is-errored');
       $(this.el).on('click', function () {
         $(_this3.el + '__input--text').val('');
