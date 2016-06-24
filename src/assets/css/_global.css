@@ -23,6 +23,13 @@ h6 {
 img {
   display: inline-block;
   &:not([src*="svg"]) { max-width: 100%; }
+  &[src*="svg"] {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+  }
 }
 
 .hidden, .hide {
@@ -47,6 +54,15 @@ input {
 }
 :-ms-input-placeholder {
   color: #666;
+}
+
+::selection {
+  background: color($c-turq a(.75));
+  color: #fff;
+}
+::-moz-selection {
+  background: color($c-turq a(.75));
+  color: #fff;
 }
 
 .unicode {
