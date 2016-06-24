@@ -100,20 +100,22 @@ const paths = {
 }
 
 paths.src = {
-  css    : `${paths.base.src}assets/css`,
-  fonts  : `${paths.base.src}assets/fonts`,
-  js     : `${paths.base.src}assets/js`,
-  images : `${paths.base.src}assets/images`,
-  html   : `${paths.base.src}html`,
-  data   : `${paths.base.src}data`
+  css     : `${paths.base.src}assets/css`,
+  fonts   : `${paths.base.src}assets/fonts`,
+  js      : `${paths.base.src}assets/js`,
+  images  : `${paths.base.src}assets/images`,
+  favicon : `${paths.base.src}assets/favicon`,
+  html    : `${paths.base.src}html`,
+  data    : `${paths.base.src}data`
 }
 
 paths.dist = {
-  css    : `${paths.base.dist}assets/css`,
-  fonts  : `${paths.base.dist}assets/fonts`,
-  js     : `${paths.base.dist}assets/js`,
-  images : `${paths.base.dist}assets/images`,
-  html   : paths.base.dist
+  css       : `${paths.base.dist}assets/css`,
+  fonts     : `${paths.base.dist}assets/fonts`,
+  js        : `${paths.base.dist}assets/js`,
+  images    : `${paths.base.dist}assets/images`,
+  favicon   : paths.base.dist,
+  html      : paths.base.dist
 }
 
 
@@ -285,8 +287,10 @@ gulp.task('images', () => {
     .pipe(gulp.dest(paths.dist.images))
 })
 
-
-
+gulp.task('favicon', () => {
+  gulp.src(`${paths.src.favicon}/**/*`)
+    .pipe(gulp.dest(paths.dist.favicon))
+})
 
 gulp.task('clean', () => {
   cached.caches = {}
@@ -304,7 +308,7 @@ gulp.task('critical', () => {
     .pipe(gulp.dest(paths.dist.html))
 })
 
-gulp.task('build', ['static-files', 'images', 'fonts', 'html', 'css', 'js'])
+gulp.task('build', ['static-files', 'images', 'fonts', 'html', 'css', 'js', 'favicon'])
 
 const refreshTasks = ['clean']
 if (!global.isWatching) {
@@ -341,6 +345,7 @@ gulp.task('watch', ['browsersync'], () => {
   gulp.watch(`${paths.src.fonts}/**/*`, ['fonts'])
   gulp.watch(`${paths.src.js}/**/*.{js,coffee}`, ['js'])
   gulp.watch(`${paths.src.images}/**/*.{gif,jpg,png,svg}`, ['images'])
+  gulp.watch(`${paths.src.favicon}/**/*`, ['favicon'])
 })
 
 
