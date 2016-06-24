@@ -723,6 +723,14 @@ img:not([src*="svg"]) {
   max-width: 100%;
 }
 
+img[src*="svg"] {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .hidden, .hide {
   display: none;
 }
@@ -748,6 +756,21 @@ input {
 
 :-ms-input-placeholder {
   color: #666;
+}
+
+::-moz-selection {
+  background: rgba(0, 150, 136, 0.75);
+  color: #fff;
+}
+
+::selection {
+  background: rgba(0, 150, 136, 0.75);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(0, 150, 136, 0.75);
+  color: #fff;
 }
 
 .unicode {
@@ -947,7 +970,7 @@ input {
   animation: spin 1s infinite;
 }
 
-@media   screen and (max-width: 419px) {
+@media   screen and (max-width: 619px) {
   .slider--post-your-event {
     width: calc(100% + 4rem);
     left: -2rem;
@@ -1054,6 +1077,40 @@ input {
 
 .slick-list {
   transition: height 500ms ease-out;
+}
+
+.social-links__title {
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+.social-links__list {
+  padding: 0;
+  margin: 2rem auto 0;
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.social-links li:last-of-type {
+  margin-right: 0;
+}
+
+.social-links img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@media         screen and (min-width: 768px) {
+  .social-links__title {
+    margin: 2rem 0;
+  }
+  .social-links li {
+    margin-right: 3rem;
+  }
 }
 
 .about-us {
@@ -1288,40 +1345,6 @@ input {
   }
 }
 
-.social-links__title {
-  margin: 2rem 0 1rem;
-  font-weight: 600;
-}
-
-.social-links__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.social-links li {
-  display: inline-block;
-  margin-right: 2rem;
-}
-
-.social-links li:last-of-type {
-  margin-right: 0;
-}
-
-.social-links img {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-@media         screen and (min-width: 768px) {
-  .social-links__title {
-    margin: 2rem 0;
-  }
-  .social-links li {
-    margin-right: 3rem;
-  }
-}
-
 .newsletter {
   position: relative;
   padding: 2rem;
@@ -1497,7 +1520,7 @@ input {
 }
 
 .post-your-event {
-  padding: 2rem 2rem 28rem;
+  padding: 2rem 2rem 36rem;
   background-image: url("../images/bg-gradient.jpg");
   background-size: cover;
   color: #fff;
@@ -1521,7 +1544,7 @@ input {
   clear: both;
 }
 
-@media         screen and (min-width: 768px) {
+@media       screen and (min-width: 620px) {
   .post-your-event {
     padding-top: 4rem;
     padding-left: 4rem;
@@ -1602,7 +1625,7 @@ input {
 }
 
 .screenshots--02 {
-  margin-top: -24rem;
+  margin-top: -32rem;
   background-image: url("../images/svg/bg-angles-02.svg");
   background-repeat: no-repeat;
   background-position: top;
@@ -1616,7 +1639,7 @@ input {
   height: 20rem;
 }
 
-@media   screen and (max-width: 419px) {
+@media   screen and (max-width: 619px) {
   .screenshots--02 img[src*="iphone"] {
     position: relative;
     z-index: 100;
@@ -1626,7 +1649,7 @@ input {
   }
 }
 
-@media       screen and (min-width: 420px) {
+@media       screen and (min-width: 620px) {
   .screenshots--01 img[src*="iphone"] {
     position: relative;
     left: 53%;
@@ -1687,12 +1710,16 @@ input {
   }
 }
 
+@media       screen and (min-width: 620px) {
+  .screenshots--02 {
+    margin-top: -28rem;
+  }
+}
+
 @media         screen and (min-width: 768px) {
-  .screenshots {
+  .screenshots--01 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-  .screenshots--01 {
     margin-top: -12rem;
     margin-bottom: 0;
   }
@@ -1969,7 +1996,7 @@ input {
   clear: both;
 }
 
-@media       screen and (min-width: 420px) {
+@media       screen and (min-width: 620px) {
   .why {
     /* padding-top: calc($column-gutter*4); */
   }
