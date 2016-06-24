@@ -89,6 +89,10 @@ block content
         .callout.callout--success
           h2.callout__title!= content.newsletter.callouts[1].title
           p.callout__description!= content.newsletter.callouts[1].description
+        .social-links.social-links--large
+          ul.social-links__list
+            li: a.popup-link(href="http://www.facebook.com/sharer/sharer.php?u=#{metadataURL}" target="_blank" data-popup-size="width=585,height=368"): img(src="assets/images/svg/icon-facebook--filled.svg")
+            li: a.popup-link(href="http://www.twitter.com/intent/tweet?url=#{metadataURL}" target="_blank" data-popup-size="width=585,height=261"): img(src="assets/images/svg/icon-twitter--filled.svg")
 
   footer.footer
     .footer__container
@@ -98,5 +102,5 @@ block content
       .social-links
         h3.social-links__title Share this page:
         ul.social-links__list
-          li: a.popup-link(href="http://www.twitter.com/intent/tweet?url=http://seekout.co" target="_blank" data-popup-size="width=585,height=261"): img(src="assets/images/svg/icon-twitter.svg")
-          li: a.popup-link(href="http://www.facebook.com/sharer/sharer.php?u=http://seekout.co" target="_blank" data-popup-size="width=585,height=368"): img(src="assets/images/svg/icon-facebook.svg")
+          li: a.popup-link(href="http://www.twitter.com/intent/tweet?url=#{metadataURL}" target="_blank" data-popup-size="width=585,height=261"): img(src="assets/images/svg/icon-twitter.svg")
+          li: a.popup-link(href="http://www.facebook.com/sharer/sharer.php?u=#{metadataURL}" target="_blank" data-popup-size="width=585,height=368"): img(src="assets/images/svg/icon-facebook.svg")

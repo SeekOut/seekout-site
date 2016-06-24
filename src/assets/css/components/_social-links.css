@@ -1,0 +1,39 @@
+.social-links {
+  &__title {
+    margin: calc($column-gutter*2) 0 $column-gutter;
+    font-weight: 600;
+  }
+  &__list {
+    padding: 0;
+    margin: calc($column-gutter*2) auto 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: calc($column-gutter*2);
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  &--large {
+    img {
+      height: 3.75rem;
+      width: 3.75rem;
+    }
+  }
+}
+
+@media (--mobile) {
+  .social-links {
+    &__title {
+      margin: calc($column-gutter*2) 0;
+    }
+    li {
+      margin-right: calc($column-gutter*3);
+    }
+  }
+}
