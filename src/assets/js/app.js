@@ -4,7 +4,7 @@ jQuery(function($){
   /*
     Mailchimp Newsletter Submit binding
   */
-  let mailform = new Mailform('.mailform');
+  let mailform = new Mailform('.mailform', '.newsletter');
 
   /*
     Carousels

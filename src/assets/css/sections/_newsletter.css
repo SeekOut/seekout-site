@@ -6,6 +6,25 @@
   &__container {
     lost-center: $row-width;
   }
+  &__prompt {
+    .addthis_sharing_toolbox {
+      margin-top: calc($column-gutter*2);
+      .at-share-btn {
+        max-height: none;
+        max-width: none;
+      }
+      .at-icon-wrapper {
+        height: 52px !important;
+        width: 52px !important;
+      }
+    }
+  }
+  &:not(.is-success) {
+    .newsletter__success { display: none; }
+  }
+  &.is-success {
+    .newsletter__prompt { display: none; }
+  }
 }
 
 @media (--mobile) {

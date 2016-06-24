@@ -1,6 +1,7 @@
 export default class Mailform {
-  constructor(el) {
-    this.el     = el
+  constructor(el, parentEl) {
+    this.el        = el
+    this.parentEl  = parentEl
 
     this.init()
   }
@@ -45,6 +46,7 @@ export default class Mailform {
       this.errorCallback()
     } else {
       console.log('success.. and success!')
+      $(this.el).closest(this.parentEl).addClass('is-success')
     }
   }
   errorCallback(err) {
@@ -53,6 +55,7 @@ export default class Mailform {
     $(this.el).on('click', ()=>{
       $(this.el + '__input--text').val('')
       $(this.el).removeClass('is-errored')
+      $(this.el).off('click')
     })
   }
 }

@@ -88,9 +88,15 @@
     }
   },
   "newsletter": {
-    "callout": {
-      "title": "Be a part of it.",
-      "description": "Get invited to receive early access and updates. <br>We’re all in this together. Let's connect, build, and grow our communities."
-    }
+    "callouts": [
+      {
+        "title": "Be a part of it.",
+        "description": "Get invited to receive early access and updates. <br>We’re all in this together. Let's connect, build, and grow our communities."
+      },
+      {
+        "title": "Thank you!",
+        "description": "Hang tight, we’ll be sure to notify you about early access and updates. <br>In the meantime, share SeekOut with your friends and community members."
+      }
+    ]
   }
 }
