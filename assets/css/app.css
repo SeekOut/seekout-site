@@ -770,9 +770,9 @@ input {
 }
 
 @keyframes gradientTransition {
-  0% {background-position:10% 0%}
-  50% {background-position:91% 100%}
-  100% {background-position:10% 0%}
+  0% { background-position: 70% 0% }
+  50% { background-position: 31% 100% }
+  100% { background-position: 70% 0% }
 }
 
 .btn {
@@ -817,6 +817,11 @@ input {
 
 .callout__title {
   margin-top: 0;
+  font-size: 2rem;
+}
+
+.callout--success .callout__title {
+  color: #009688;
 }
 
 .callout__description {
@@ -851,7 +856,7 @@ input {
 
 .icon-list__title {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .icon-list__description {
@@ -861,6 +866,11 @@ input {
 .icon-list__icon {
   height: 28px;
   width: auto;
+}
+
+.icon-list__icon[src*="rainbow"] {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 @media     screen and (max-width: 767px) {
@@ -1268,12 +1278,6 @@ input {
     padding-right: 4rem;
     padding-bottom: 4rem;
   }
-  .footer p {
-    display: inline;
-  }
-  .footer p:not(:first-of-type):before {
-    content: "\00a0";
-  }
   .footer a:hover, .footer a:focus {
     color: rgb(64, 176, 166);
   }
@@ -1286,6 +1290,7 @@ input {
 
 .social-links__title {
   margin: 2rem 0 1rem;
+  font-weight: 600;
 }
 
 .social-links__list {
@@ -1318,6 +1323,7 @@ input {
 }
 
 .newsletter {
+  position: relative;
   padding: 2rem;
   text-align: center;
   background-color: #ebebeb;
@@ -1341,6 +1347,28 @@ input {
   clear: both;
 }
 
+.newsletter__prompt .addthis_sharing_toolbox {
+  margin-top: 2rem;
+}
+
+.newsletter__prompt .addthis_sharing_toolbox .at-share-btn {
+  max-height: none;
+  max-width: none;
+}
+
+.newsletter__prompt .addthis_sharing_toolbox .at-icon-wrapper {
+  height: 52px !important;
+  width: 52px !important;
+}
+
+.newsletter:not(.is-success) .newsletter__success {
+  display: none;
+}
+
+.newsletter.is-success .newsletter__prompt {
+  display: none;
+}
+
 @media         screen and (min-width: 768px) {
   .newsletter {
     padding-top: 4rem;
@@ -1359,6 +1387,66 @@ input {
 
 .mailform {
   margin-top: 3rem;
+}
+
+.mailform.is-waiting:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 235, 235, 0.5);
+}
+
+.mailform.is-waiting:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  z-index: 310;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(64, 64, 64);
+  border-bottom-color: #009688;
+  animation: spin 1s infinite;
+}
+
+.mailform.is-errored {
+  position: relative;
+  pointer-events: none;
+}
+
+.mailform.is-errored:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(235, 235, 235, 0.75);
+}
+
+.mailform.is-errored:after {
+  content: "Seems like something went wrong. Try again later?";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 310;
+  -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  background-color: #444;
+  color: #fff;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: initial;
 }
 
 .mailform__input {
@@ -1386,6 +1474,11 @@ input {
 .mailform__input--submit {
   padding-right: 2rem;
   padding-left: 2rem;
+}
+
+.mailform__hp {
+  position: absolute;
+  left: -5000px;
 }
 
 @media     screen and (max-width: 767px) {
@@ -1454,7 +1547,7 @@ input {
 .screenshots {
   position: relative;
   padding: 0 2rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .screenshots:after {
@@ -1491,7 +1584,6 @@ input {
 
 .screenshots--01 {
   margin-top: -6rem;
-  margin-bottom: -1rem;
 }
 
 .screenshots--01:after {
@@ -1543,6 +1635,8 @@ input {
     width: 340px;
   }
   .screenshots--02 {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 8rem;
   }
   .screenshots--02:after {
@@ -1552,7 +1646,8 @@ input {
     height: 16rem;
   }
   .screenshots--02 .screenshots__container {
-    left: -2.25%;
+
+    /* left: -2.25%; */
   }
   .screenshots--02__column {
     width: calc(99.999999% * 1/3);
@@ -1573,20 +1668,22 @@ input {
     clear: left;
   }
   .screenshots--02 img[src*="iphone"] {
-    width: 140%;
+    width: 100%;
   }
   .screenshots--02 img[src*="iphone-01"] {
     z-index: 110;
-    -ms-transform: translateY(12.5%);
-        transform: translateY(12.5%);
+    -ms-transform: translateY(12.5%) translateX(31%) scale(1);
+        transform: translateY(12.5%) translateX(31%) scale(1);
   }
   .screenshots--02 img[src*="iphone-02"] {
     z-index: 120;
+    -ms-transform: scale(1) translateX(7%);
+        transform: scale(1) translateX(7%);
   }
   .screenshots--02 img[src*="iphone-03"] {
     z-index: 110;
-    -ms-transform: translateY(20%);
-        transform: translateY(20%);
+    -ms-transform: translateY(20%) translateX(-16.5%) scale(1);
+        transform: translateY(20%) translateX(-16.5%) scale(1);
   }
 }
 
@@ -1650,9 +1747,9 @@ input {
 
 .splash {
   padding: 2rem;
-  background: linear-gradient(145deg, #c62828, #d91b5c, #9c27b0, #3f51b5, #1976d2, #009688, #689f38, #ef6c00);
+  background: linear-gradient(200deg, #d32f2f, #e91e63, #9c27b0, #1565c0, #009688, #4caf50, #fbc02d, #ff9800);
   background-size: 1600% 1600%;
-  animation: gradientTransition 30s ease infinite;
+  animation: gradientTransition 59s ease infinite;
   color: #fff;
   text-align: center;
 }
@@ -1810,7 +1907,7 @@ input {
   text-align: center;
   background-image: url("../images/bg-gradient-city.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: 80% center;
   color: #fff;
 }
 
@@ -1843,6 +1940,7 @@ input {
 
 @media            screen and (min-width: 940px) {
   .the-community {
+    background-position: center center;
     padding-top: 6rem;
     padding-bottom: 36rem;
   }
