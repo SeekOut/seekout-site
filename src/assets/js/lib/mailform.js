@@ -43,7 +43,7 @@ export default class Mailform {
     $(this.el).removeClass('is-waiting')
     if (data.result != "success") {
       console.error(data.msg)
-      this.errorCallback()
+      this.errorCallback(data.msg)
     } else {
       console.log('success.. and success!')
       $(this.el).closest(this.parentEl).addClass('is-success')
@@ -51,6 +51,13 @@ export default class Mailform {
   }
   errorCallback(err) {
     // perform error handling
+    let errMessage = 'Seems like something went wrong. Try again later?'
+    if (err) {
+      if (err.indexOf('already subscribed') > -1) {
+        errMessage = 'Looks like you’re already subscribed! :)'
+      }
+    }
+    $(this.el).attr('data-error', errMessage)
     $(this.el).addClass('is-errored')
     $(this.el).on('click', ()=>{
       $(this.el + '__input--text').val('')

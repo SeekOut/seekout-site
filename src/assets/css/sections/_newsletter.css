@@ -86,7 +86,7 @@
       background-color: color($c-gray--light a(.75));
     }
     &:after {
-      content: "Seems like something went wrong. Try again later?";
+      content: attr(data-error);
       position: absolute;
       top: 50%;
       left: 50%;
