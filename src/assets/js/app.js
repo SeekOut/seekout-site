@@ -39,7 +39,7 @@ jQuery(function($){
   }
 
   if (matchMedia) {
-    var mqPostEventSlider = window.matchMedia("(max-width: 419px)");
+    var mqPostEventSlider = window.matchMedia("(max-width: 619px)");
     mqPostEventSlider.addListener(postEventSliderCallback);
     postEventSliderCallback(mqPostEventSlider);
   }

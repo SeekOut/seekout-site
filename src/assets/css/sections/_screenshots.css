@@ -31,7 +31,7 @@
     }
   }
   &--02 {
-    margin-top: calc(-$column-gutter*24);
+    margin-top: calc(-$column-gutter*32);
     background-image: url("../images/svg/bg-angles-02.svg");
     background-repeat: no-repeat;
     background-position: top;
@@ -102,11 +102,19 @@
   }
 }
 
+@media (--uiIphone) {
+  .screenshots {
+    &--02 {
+      margin-top: -28rem;
+    }
+  }
+}
+
 @media (--mobile) {
   .screenshots {
-    padding-left: calc($column-gutter*4);
-    padding-right: calc($column-gutter*4);
     &--01 {
+      padding-left: calc($column-gutter*4);
+      padding-right: calc($column-gutter*4);
       margin-top: calc(-$column-gutter*12);
       margin-bottom: 0;
       &:after {
