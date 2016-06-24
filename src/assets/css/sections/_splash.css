@@ -1,8 +1,8 @@
 .splash {
   padding: calc($column-gutter*2);
-  background: linear-gradient(145deg, #c62828, #d91b5c, #9c27b0, #3f51b5, #1976d2, #009688, #689f38, #ef6c00);
+  background: linear-gradient(200deg, #d32f2f, #e91e63, #9c27b0, #1565c0, #009688, #4caf50, #fbc02d, #ff9800);
   background-size: 1600% 1600%;
-  animation: gradientTransition 30s ease infinite;
+  animation: gradientTransition 59s ease infinite;
   color: #fff;
   text-align: center;
   &__container {

@@ -1,6 +1,7 @@
 .callout {
   &__title {
     margin-top: 0;
+    font-size: 2rem;
     .callout--success & { color: $c-turq; }
   }
   &__description {

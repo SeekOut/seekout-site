@@ -4,7 +4,7 @@
   list-style: none;
   &__title {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   &__description {
     margin-bottom: 0;
@@ -12,6 +12,10 @@
   &__icon {
     height: 28px;
     width: auto;
+    &[src*="rainbow"] {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
   }
 }
 

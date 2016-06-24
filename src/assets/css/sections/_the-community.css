@@ -3,7 +3,7 @@
   text-align: center;
   background-image: url("../images/bg-gradient-city.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: 80% center;
   color: #fff;
   &__container {
     lost-center: $row-width;
@@ -21,6 +21,7 @@
 
 @media (--row) {
   .the-community {
+    background-position: center center;
     padding-top: calc($column-gutter*6);
     padding-bottom: calc($column-gutter*36);
   }
