@@ -1,29 +1,9 @@
-// ------------------------------------------
-
-// External Libraries
-
-// ------------------------------------------
 
 jQuery(function($){
-  $('.slider--testimonials').slick({
-    'fade': true,
-    'zIndex': 200,
-    'prevArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>',
-    'nextArrow': '<img src="assets/images/svg/ui-nav-pag.svg"/>',
-    'arrows': true,
-    'dots': true,
-    'responsive': [
-      {
-        'breakpoint': 767,
-        'settings': {
-          'arrows': false,
-          'dots': true
-        }
-      }
-    ]
-  });
 
-
+  /*
+    Carousels
+  */
   if (matchMedia) {
     var tsMediaQuery = window.matchMedia("(max-width: 767px)");
     tsMediaQuery.addListener(tsCallback);
@@ -86,9 +66,13 @@ jQuery(function($){
     return false;
   });
 
+  /*
+    Footer social media links
+  */
   $(".popup-link").click(function(){
     var window_size = this.getAttribute('data-popup-size');
     window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,' + window_size);
     return false;
   });
+
 });
